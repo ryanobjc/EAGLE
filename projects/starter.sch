@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.000000123031" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -64,12 +64,6 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
-<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
-<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -78,7 +72,6 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
@@ -90,29 +83,15 @@
 <layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
 <layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
 <layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
-<layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
-<layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
-<layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
-<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
-<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
-<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
@@ -125,35 +104,9 @@
 <layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
 <layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
-<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
-<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
-<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
-<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
-<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
-<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
-<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
-<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="no"/>
-<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
-<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
-<layer number="248" name="Housing" color="7" fill="1" visible="no" active="yes"/>
-<layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="7" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="7" fill="1" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic>
 <libraries>
@@ -12366,59 +12319,6 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="codenext2020">
-<packages>
-<package name="SK9822">
-<smd name="SDI" x="2.45" y="-1.4" dx="1.5" dy="1" layer="1"/>
-<smd name="CKI" x="2.45" y="0" dx="1.5" dy="1" layer="1"/>
-<smd name="GND" x="2.45" y="1.4" dx="1.5" dy="1" layer="1"/>
-<smd name="VCC" x="-2.45" y="1.4" dx="1.5" dy="1" layer="1"/>
-<smd name="CKO" x="-2.45" y="0" dx="1.5" dy="1" layer="1"/>
-<smd name="SDO" x="-2.45" y="-1.4" dx="1.5" dy="1" layer="1"/>
-<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="-2.5" x2="2" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="2" y1="-2.5" x2="2.5" y2="-2" width="0.127" layer="21"/>
-<wire x1="2.5" y1="-2" x2="2.5" y2="2.5" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="SK9822">
-<pin name="GND" x="-2" y="1" length="short" direction="sup"/>
-<pin name="CI" x="-2" y="3" length="short" direction="in"/>
-<pin name="DI" x="-2" y="5" length="short" direction="in"/>
-<pin name="DO" x="18" y="5" length="short" direction="out" rot="R180"/>
-<pin name="CO" x="18" y="3" length="short" direction="out" rot="R180"/>
-<pin name="VCC" x="18" y="1" length="short" direction="sup" rot="R180"/>
-<wire x1="0" y1="0" x2="0" y2="8" width="0.254" layer="94"/>
-<wire x1="0" y1="8" x2="16" y2="8" width="0.254" layer="94"/>
-<wire x1="16" y1="8" x2="16" y2="0" width="0.254" layer="94"/>
-<wire x1="16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DOTSTAR">
-<gates>
-<gate name="G$1" symbol="SK9822" x="-8" y="-3"/>
-</gates>
-<devices>
-<device name="" package="SK9822">
-<connects>
-<connect gate="G$1" pin="CI" pad="CKI"/>
-<connect gate="G$1" pin="CO" pad="CKO"/>
-<connect gate="G$1" pin="DI" pad="SDI"/>
-<connect gate="G$1" pin="DO" pad="SDO"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12481,12 +12381,6 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <part name="U$2" library="adafruit" deviceset="FIDUCIAL" device=""/>
 <part name="U$6" library="adafruit" deviceset="FIDUCIAL" device=""/>
 <part name="FRAME1" library="frames" deviceset="FRAME_A_L" device=""/>
-<part name="U$3" library="codenext2020" deviceset="DOTSTAR" device=""/>
-<part name="U$5" library="codenext2020" deviceset="DOTSTAR" device=""/>
-<part name="U$7" library="codenext2020" deviceset="DOTSTAR" device=""/>
-<part name="U$8" library="codenext2020" deviceset="DOTSTAR" device=""/>
-<part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="V5" library="supply2" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12673,16 +12567,6 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <attribute name="SHEET" x="187.96" y="-59.69" size="2.54" layer="94" font="vector"/>
 <attribute name="DRAWING_NAME" x="119.38" y="-41.91" size="2.54" layer="94" font="vector"/>
 </instance>
-<instance part="U$3" gate="G$1" x="104" y="47" smashed="yes"/>
-<instance part="U$5" gate="G$1" x="137" y="47" smashed="yes"/>
-<instance part="U$7" gate="G$1" x="168" y="47" smashed="yes"/>
-<instance part="U$8" gate="G$1" x="189" y="69" smashed="yes" rot="R90"/>
-<instance part="GND11" gate="1" x="104.08" y="38.86" smashed="yes">
-<attribute name="VALUE" x="101.54" y="36.32" size="1.778" layer="96"/>
-</instance>
-<instance part="V5" gate="+5V" x="137.54" y="33.26" smashed="yes" rot="R180">
-<attribute name="VALUE" x="139.445" y="30.085" size="1.778" layer="96" rot="R180"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -12789,25 +12673,6 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 </segment>
-<segment>
-<pinref part="U$3" gate="G$1" pin="GND"/>
-<wire x1="102" y1="48" x2="102" y2="44" width="0.1524" layer="91"/>
-<pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="102" y1="44" x2="104.08" y2="44" width="0.1524" layer="91"/>
-<wire x1="104.08" y1="44" x2="104.08" y2="41.4" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="GND"/>
-<wire x1="104.08" y1="44" x2="135" y2="44" width="0.1524" layer="91"/>
-<wire x1="135" y1="44" x2="135" y2="48" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="GND"/>
-<wire x1="135" y1="44" x2="166" y2="44" width="0.1524" layer="91"/>
-<wire x1="166" y1="44" x2="166" y2="48" width="0.1524" layer="91"/>
-<junction x="135" y="44"/>
-<wire x1="166" y1="44" x2="193" y2="44" width="0.1524" layer="91"/>
-<wire x1="193" y1="44" x2="193" y2="67" width="0.1524" layer="91"/>
-<junction x="166" y="44"/>
-<pinref part="U$8" gate="G$1" pin="GND"/>
-<wire x1="193" y1="67" x2="188" y2="67" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -12845,27 +12710,6 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <pinref part="IC1" gate="G$1" pin="VBUS"/>
 <pinref part="SJ2" gate="1" pin="2"/>
 </segment>
-<segment>
-<pinref part="U$8" gate="G$1" pin="VCC"/>
-<wire x1="188" y1="87" x2="196" y2="87" width="0.1524" layer="91"/>
-<wire x1="196" y1="87" x2="196" y2="36" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="VCC"/>
-<wire x1="186" y1="48" x2="186" y2="36" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="VCC"/>
-<wire x1="122" y1="48" x2="123" y2="48" width="0.1524" layer="91"/>
-<wire x1="123" y1="48" x2="123" y2="35.8" width="0.1524" layer="91"/>
-<pinref part="V5" gate="+5V" pin="+5V"/>
-<wire x1="123" y1="35.8" x2="137.54" y2="35.8" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="VCC"/>
-<wire x1="137.54" y1="35.8" x2="155" y2="35.8" width="0.1524" layer="91"/>
-<wire x1="155" y1="35.8" x2="155" y2="36" width="0.1524" layer="91"/>
-<junction x="137.54" y="35.8"/>
-<wire x1="155" y1="36" x2="155" y2="48" width="0.1524" layer="91"/>
-<wire x1="186" y1="36" x2="155" y2="36" width="0.1524" layer="91"/>
-<junction x="155" y="36"/>
-<wire x1="196" y1="36" x2="186" y2="36" width="0.1524" layer="91"/>
-<junction x="186" y="36"/>
-</segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
@@ -12879,11 +12723,6 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <label x="64.14" y="69.4" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="PB2(PDI/MISO)"/>
 <pinref part="JP1" gate="A" pin="11"/>
-<wire x1="84.46" y1="44" x2="90" y2="44" width="0.1524" layer="91"/>
-<wire x1="90" y1="44" x2="90" y2="52" width="0.1524" layer="91"/>
-<junction x="84.46" y="44"/>
-<pinref part="U$3" gate="G$1" pin="DI"/>
-<wire x1="90" y1="52" x2="102" y2="52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -12912,12 +12751,6 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <label x="64.14" y="66.86" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="PB1(SCK)"/>
 <pinref part="JP1" gate="A" pin="12"/>
-<pinref part="U$3" gate="G$1" pin="CI"/>
-<wire x1="102" y1="50" x2="93" y2="50" width="0.1524" layer="91"/>
-<wire x1="93" y1="50" x2="93" y2="41" width="0.1524" layer="91"/>
-<wire x1="93" y1="41" x2="84.46" y2="41" width="0.1524" layer="91"/>
-<wire x1="84.46" y1="41" x2="84.46" y2="41.46" width="0.1524" layer="91"/>
-<junction x="84.46" y="41.46"/>
 </segment>
 </net>
 <net name="RST" class="0">
@@ -13182,29 +13015,27 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="C7" gate="G$1" pin="1"/>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="-4.62" y1="138.82" x2="-12.24" y2="138.82" width="0.1524" layer="91"/>
-<junction x="-12.24" y="138.82"/>
-</segment>
-<segment>
 <wire x1="13.34" y1="99.88" x2="13.34" y2="102.42" width="0.1524" layer="91"/>
 <wire x1="5.72" y1="99.88" x2="13.34" y2="99.88" width="0.1524" layer="91"/>
 <wire x1="-1.9" y1="99.88" x2="5.72" y2="99.88" width="0.1524" layer="91"/>
 <wire x1="13.34" y1="92.26" x2="13.34" y2="94.8" width="0.1524" layer="91"/>
 <wire x1="13.34" y1="94.8" x2="-1.9" y2="94.8" width="0.1524" layer="91"/>
 <wire x1="-1.9" y1="94.8" x2="-1.9" y2="99.88" width="0.1524" layer="91"/>
+<wire x1="-4.62" y1="138.82" x2="-12.24" y2="138.82" width="0.1524" layer="91"/>
 <wire x1="-1.9" y1="99.88" x2="-1.9" y2="102.42" width="0.1524" layer="91"/>
 <junction x="13.34" y="99.88"/>
 <junction x="5.72" y="99.88"/>
 <junction x="13.34" y="94.8"/>
 <junction x="-1.9" y="99.88"/>
+<junction x="-12.24" y="138.82"/>
 <pinref part="IC1" gate="G$1" pin="VCC"/>
 <pinref part="IC1" gate="G$1" pin="VCC1"/>
 <pinref part="SJ2" gate="1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="AVCC1"/>
 <pinref part="IC1" gate="G$1" pin="AVCC"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
@@ -13221,13 +13052,11 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 </net>
 <net name="AREF" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="AREF"/>
 <wire x1="-4.44" y1="74.48" x2="13.34" y2="74.48" width="0.1524" layer="91"/>
-<label x="-1.9" y="74.48" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="84.46" y1="112.58" x2="61.6" y2="117.66" width="0.1524" layer="91"/>
 <label x="64.14" y="118.66" size="1.778" layer="95"/>
+<label x="-1.9" y="74.48" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="AREF"/>
 <pinref part="JP5" gate="A" pin="2"/>
 </segment>
 </net>
@@ -13239,62 +13068,9 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <pinref part="CN1" gate="G$1" pin="VBUS"/>
 </segment>
 </net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="DO"/>
-<pinref part="U$5" gate="G$1" pin="DI"/>
-<wire x1="122" y1="52" x2="135" y2="52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="CO"/>
-<pinref part="U$5" gate="G$1" pin="CI"/>
-<wire x1="122" y1="50" x2="135" y2="50" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="U$5" gate="G$1" pin="DO"/>
-<pinref part="U$7" gate="G$1" pin="DI"/>
-<wire x1="155" y1="52" x2="166" y2="52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="U$5" gate="G$1" pin="CO"/>
-<pinref part="U$7" gate="G$1" pin="CI"/>
-<wire x1="155" y1="50" x2="166" y2="50" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="U$7" gate="G$1" pin="DO"/>
-<wire x1="186" y1="52" x2="186" y2="61" width="0.1524" layer="91"/>
-<wire x1="186" y1="61" x2="184" y2="61" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="DI"/>
-<wire x1="184" y1="61" x2="184" y2="67" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="U$7" gate="G$1" pin="CO"/>
-<wire x1="186" y1="50" x2="189" y2="50" width="0.1524" layer="91"/>
-<wire x1="189" y1="50" x2="189" y2="62" width="0.1524" layer="91"/>
-<wire x1="189" y1="62" x2="186" y2="62" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="CI"/>
-<wire x1="186" y1="62" x2="186" y2="67" width="0.1524" layer="91"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="102,1,127,132,VDD,+5V,,,,"/>
-<approved hash="102,1,152,124,VDD,+5V,,,,"/>
-<approved hash="102,1,183,90,VDD,+5V,,,,"/>
-<approved hash="102,1,183,59,VDD,+5V,,,,"/>
-</errors>
 </schematic>
 </drawing>
 </eagle>
