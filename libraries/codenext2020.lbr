@@ -390,6 +390,28 @@
 <wire x1="2" y1="-2.5" x2="2.5" y2="-2" width="0.127" layer="21"/>
 <wire x1="2.5" y1="-2" x2="2.5" y2="2.5" width="0.127" layer="21"/>
 </package>
+<package name="LED_3341">
+<text x="-2.97" y="2.07" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-3.21" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="51"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="51"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="51"/>
+<circle x="-1.65" y="0.9" radius="0.05" width="0.3" layer="21"/>
+<circle x="-1.65" y="0.9" radius="0.05" width="0.3" layer="51"/>
+<wire x1="-1.4" y1="1.58" x2="1.4" y2="1.58" width="0.05" layer="39"/>
+<wire x1="1.4" y1="1.58" x2="1.4" y2="-1.58" width="0.05" layer="39"/>
+<wire x1="1.4" y1="-1.58" x2="-1.4" y2="-1.58" width="0.05" layer="39"/>
+<wire x1="-1.4" y1="-1.58" x2="-1.4" y2="1.58" width="0.05" layer="39"/>
+<smd name="1" x="-0.75" y="0.9" dx="0.8" dy="0.5" layer="1"/>
+<smd name="5" x="0.75" y="0" dx="0.8" dy="0.3" layer="1"/>
+<smd name="8" x="0" y="0.83" dx="1" dy="0.3" layer="1" rot="R90"/>
+<smd name="7" x="0" y="-0.83" dx="1" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-0.75" y="0" dx="0.8" dy="0.3" layer="1"/>
+<smd name="3" x="-0.75" y="-0.9" dx="0.8" dy="0.5" layer="1"/>
+<smd name="6" x="0.75" y="0.9" dx="0.8" dy="0.5" layer="1"/>
+<smd name="4" x="0.75" y="-0.9" dx="0.8" dy="0.5" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SWITCH-MOM">
@@ -728,12 +750,12 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="DOTSTAR">
+<deviceset name="DOTSTAR" prefix="LED">
 <gates>
 <gate name="G$1" symbol="SK9822" x="-8" y="-3"/>
 </gates>
 <devices>
-<device name="" package="SK9822">
+<device name="SK9822" package="SK9822">
 <connects>
 <connect gate="G$1" pin="CI" pad="CKI"/>
 <connect gate="G$1" pin="CO" pad="CKO"/>
@@ -741,6 +763,19 @@
 <connect gate="G$1" pin="DO" pad="SDO"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2020" package="LED_3341">
+<connects>
+<connect gate="G$1" pin="CI" pad="5"/>
+<connect gate="G$1" pin="CO" pad="2"/>
+<connect gate="G$1" pin="DI" pad="4"/>
+<connect gate="G$1" pin="DO" pad="3"/>
+<connect gate="G$1" pin="GND" pad="6 7"/>
+<connect gate="G$1" pin="VCC" pad="1 8"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -12368,6 +12368,28 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 </library>
 <library name="codenext2020">
 <packages>
+<package name="LED_3341">
+<text x="-2.97" y="2.07" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-3.21" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="51"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="51"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="51"/>
+<circle x="-1.65" y="0.9" radius="0.05" width="0.3" layer="21"/>
+<circle x="-1.65" y="0.9" radius="0.05" width="0.3" layer="51"/>
+<wire x1="-1.4" y1="1.58" x2="1.4" y2="1.58" width="0.05" layer="39"/>
+<wire x1="1.4" y1="1.58" x2="1.4" y2="-1.58" width="0.05" layer="39"/>
+<wire x1="1.4" y1="-1.58" x2="-1.4" y2="-1.58" width="0.05" layer="39"/>
+<wire x1="-1.4" y1="-1.58" x2="-1.4" y2="1.58" width="0.05" layer="39"/>
+<smd name="1" x="-0.75" y="0.9" dx="0.8" dy="0.5" layer="1"/>
+<smd name="5" x="0.75" y="0" dx="0.8" dy="0.3" layer="1"/>
+<smd name="8" x="0" y="0.83" dx="1" dy="0.3" layer="1" rot="R90"/>
+<smd name="7" x="0" y="-0.83" dx="1" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-0.75" y="0" dx="0.8" dy="0.3" layer="1"/>
+<smd name="3" x="-0.75" y="-0.9" dx="0.8" dy="0.5" layer="1"/>
+<smd name="6" x="0.75" y="0.9" dx="0.8" dy="0.5" layer="1"/>
+<smd name="4" x="0.75" y="-0.9" dx="0.8" dy="0.5" layer="1"/>
+</package>
 <package name="SK9822">
 <smd name="SDI" x="2.45" y="-1.4" dx="1.5" dy="1" layer="1"/>
 <smd name="CKI" x="2.45" y="0" dx="1.5" dy="1" layer="1"/>
@@ -12397,12 +12419,12 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DOTSTAR">
+<deviceset name="DOTSTAR" prefix="LED">
 <gates>
 <gate name="G$1" symbol="SK9822" x="-8" y="-3"/>
 </gates>
 <devices>
-<device name="" package="SK9822">
+<device name="SK9822" package="SK9822">
 <connects>
 <connect gate="G$1" pin="CI" pad="CKI"/>
 <connect gate="G$1" pin="CO" pad="CKO"/>
@@ -12410,6 +12432,19 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <connect gate="G$1" pin="DO" pad="SDO"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2020" package="LED_3341">
+<connects>
+<connect gate="G$1" pin="CI" pad="5"/>
+<connect gate="G$1" pin="CO" pad="2"/>
+<connect gate="G$1" pin="DI" pad="4"/>
+<connect gate="G$1" pin="DO" pad="3"/>
+<connect gate="G$1" pin="GND" pad="6 7"/>
+<connect gate="G$1" pin="VCC" pad="1 8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12481,10 +12516,10 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <part name="U$2" library="adafruit" deviceset="FIDUCIAL" device=""/>
 <part name="U$6" library="adafruit" deviceset="FIDUCIAL" device=""/>
 <part name="FRAME1" library="frames" deviceset="FRAME_A_L" device=""/>
-<part name="U$3" library="codenext2020" deviceset="DOTSTAR" device=""/>
-<part name="U$5" library="codenext2020" deviceset="DOTSTAR" device=""/>
-<part name="U$7" library="codenext2020" deviceset="DOTSTAR" device=""/>
-<part name="U$8" library="codenext2020" deviceset="DOTSTAR" device=""/>
+<part name="U$3" library="codenext2020" deviceset="DOTSTAR" device="2020"/>
+<part name="U$5" library="codenext2020" deviceset="DOTSTAR" device="2020"/>
+<part name="U$7" library="codenext2020" deviceset="DOTSTAR" device="2020"/>
+<part name="U$8" library="codenext2020" deviceset="DOTSTAR" device="2020"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="V5" library="supply2" deviceset="+5V" device=""/>
 </parts>
@@ -12793,20 +12828,21 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <pinref part="U$3" gate="G$1" pin="GND"/>
 <wire x1="102" y1="48" x2="102" y2="44" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="102" y1="44" x2="104.08" y2="44" width="0.1524" layer="91"/>
-<wire x1="104.08" y1="44" x2="104.08" y2="41.4" width="0.1524" layer="91"/>
+<wire x1="104" y1="44" x2="104.08" y2="41.4" width="0.1524" layer="91"/>
+<wire x1="102" y1="44" x2="104" y2="44" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="GND"/>
-<wire x1="104.08" y1="44" x2="135" y2="44" width="0.1524" layer="91"/>
 <wire x1="135" y1="44" x2="135" y2="48" width="0.1524" layer="91"/>
 <pinref part="U$7" gate="G$1" pin="GND"/>
 <wire x1="135" y1="44" x2="166" y2="44" width="0.1524" layer="91"/>
 <wire x1="166" y1="44" x2="166" y2="48" width="0.1524" layer="91"/>
-<junction x="135" y="44"/>
 <wire x1="166" y1="44" x2="193" y2="44" width="0.1524" layer="91"/>
 <wire x1="193" y1="44" x2="193" y2="67" width="0.1524" layer="91"/>
 <junction x="166" y="44"/>
 <pinref part="U$8" gate="G$1" pin="GND"/>
 <wire x1="193" y1="67" x2="188" y2="67" width="0.1524" layer="91"/>
+<wire x1="104" y1="44" x2="135" y2="44" width="0.1524" layer="91"/>
+<junction x="104" y="44"/>
+<junction x="135" y="44"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -13290,10 +13326,10 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 </sheet>
 </sheets>
 <errors>
-<approved hash="102,1,127,132,VDD,+5V,,,,"/>
-<approved hash="102,1,152,124,VDD,+5V,,,,"/>
-<approved hash="102,1,183,90,VDD,+5V,,,,"/>
-<approved hash="102,1,183,59,VDD,+5V,,,,"/>
+<approved hash="201,1,188,87,VCC,VCC\, +5V,,,,"/>
+<approved hash="201,1,186,48,VCC,VCC\, +5V,,,,"/>
+<approved hash="201,1,155,48,VCC,VCC\, +5V,,,,"/>
+<approved hash="201,1,122,48,VCC,VCC\, +5V,,,,"/>
 </errors>
 </schematic>
 </drawing>
